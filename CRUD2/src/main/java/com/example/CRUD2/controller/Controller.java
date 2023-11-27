@@ -13,7 +13,7 @@ import java.util.List;
 public class Controller {
     @Autowired
     ClienteService clienteService;
-
+    @CrossOrigin(origins = "http://127.0.0.7:5500")
     @GetMapping("/a")
     public List<Cliente> getClientes()
     {
